@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* .container {
+  height: 100vh;
+} */
+
+nav {
+  /* background-color: black; */
+  height: 75px;
+  display: flex;
+  padding: 0 200px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  height: 25%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li a.active {
+  border: 3px solid black;
+  padding: 10px 20px;
+}
+nav ul li a.active:hover {
+  background-color: black;
+  color: white;
+}
+
+/* *********************************************************************** */
+
+.intro-section {
+  display: flex;
+  background-color: rebeccapurple;
+  background-color: hsl(256, 26%, 20%);
+  padding: 0 200px;
+  height: 600px;
+  color: white;
+
+  /* background-size: 30%; */
+}
+
+hr {
+  position: absolute;
+  width: 180px;
+}
+
+.intro-text {
+  margin-top: 90px;
+  width: 50%;
+}
+.intro-text-title {
+  font-size: 70px;
+  /* background-color: red; */
+  line-height: 60px;
+  margin-top: 70px;
+  margin-bottom: 25px;
+}
+
+.intro-text-description {
+  /* background-color: yellow; */
+  font-size: 19px;
+}
+
+.intro-text-btn {
+  /* background-color: green; */
+  border: none;
+  padding: 15px 35px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.intro-image {
+  position: absolute;
+  right: 0;
+  margin-right: 200px;
+  margin-top: 90px;
+  z-index: 3;
+}
+
+/* *************************************************************** */
+
+main {
+  margin-top: 200px;
+  padding: 0 200px;
+  height: 100vh;
+}
+
+.main-text-title {
+  font-size: 70px;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.main-company-qualities-container {
+  display: flex;
+}
+
+.main-icon {
+  margin-bottom: 30px;
+}
+
+.how-we-work-container {
+  height: 260px;
+  width: 100%;
+  display: flex;
+  background-color: rebeccapurple;
+}
