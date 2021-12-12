@@ -4,45 +4,34 @@
   margin: 0;
 }
 
-/* .container {
-  height: 100vh;
-} */
+/* *************************************************************** */
 
 nav {
-  /* background-color: black; */
-  height: 75px;
+  height: 80px;
   display: flex;
   padding: 0 200px;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav-logo {
+nav .nav-logo {
   height: 25%;
 }
 
-nav ul {
+nav .link-s {
   list-style: none;
   display: flex;
 }
 
-nav ul li {
+nav .link {
   margin: 0 20px;
   font-size: 17px;
   text-transform: uppercase;
 }
 
-nav ul li a {
+nav .link a {
   text-decoration: none;
   color: black;
-}
-nav ul li a.active {
-  border: 3px solid black;
-  padding: 10px 20px;
-}
-nav ul li a.active:hover {
-  background-color: black;
-  color: white;
 }
 
 /* *********************************************************************** */
@@ -54,43 +43,39 @@ nav ul li a.active:hover {
   padding: 0 200px;
   height: 600px;
   color: white;
-
-  /* background-size: 30%; */
-}
-
-hr {
-  position: absolute;
-  width: 180px;
 }
 
 .intro-text {
   margin-top: 90px;
   width: 50%;
 }
-.intro-text-title {
+
+.intro-title {
   font-size: 70px;
-  /* background-color: red; */
   line-height: 60px;
   margin-top: 70px;
   margin-bottom: 25px;
 }
 
-.intro-text-description {
-  /* background-color: yellow; */
-  font-size: 19px;
+.intro-description {
+  font-size: 20px;
+  line-height: 30px;
 }
 
-.intro-text-btn {
-  /* background-color: green; */
+.intro-btn {
   border: none;
-  padding: 15px 35px;
-  font-size: 20px;
+  padding: 12px 40px;
+  font-size: 18px;
   margin-top: 30px;
 }
 
+.intro-btn a {
+  text-decoration: none;
+}
+
 .intro-image {
-  position: absolute;
   right: 0;
+  position: absolute;
   margin-right: 200px;
   margin-top: 90px;
   z-index: 3;
@@ -100,66 +85,70 @@ hr {
 
 main {
   padding: 0 200px;
+  margin-top: 250px;
 }
 
 main .title {
-  font-size: 60px;
+  font-size: 70px;
 }
 
 main .box {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin-top: 50px;
+  margin-top: 80px;
 }
-/* ****************************************************************** */
-.contact-container {
+
+main .box-item {
+  margin-right: 15px;
+}
+
+main .item-icon {
+  margin-bottom: 5px;
+}
+
+main .item-title {
+  margin: 20px 0;
+}
+
+main .item-description {
+  line-height: 27px;
+  font-size: 18px;
+  opacity: 50%;
+  max-width: 90%;
+}
+
+main .box-2 {
+  height: 260px;
   display: flex;
+  color: white;
+  padding: 0 80px;
+  margin-top: 130px;
+  align-items: center;
   justify-content: space-between;
-  padding: 0 200px;
-  margin-top: 150px;
+  background-color: hsl(256, 26%, 20%);
 }
 
-footer img {
-  height: 25%;
+main .box-2-title {
+  font-size: 60px;
+  line-height: 65px;
 }
 
-.contact-icons:hover {
-  color: yellow;
-}
-
-.company-pages-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  /* padding: 0 200px; */
-}
-
-.page-group {
-  margin-top: 70px;
+main .box-2-btn {
+  border: none;
+  padding: 15px 40px;
   text-transform: uppercase;
 }
-.page-group > h3 {
-  margin-bottom: 50px;
-}
 
-.page-group ul li {
-  list-style-type: none;
-  line-height: 30px;
-}
-.page-group ul li a {
-  text-decoration: none;
-  font-size: 16px;
-  color: black;
-}
-.page-group ul li a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
+/* ****************************************************************** */
 
-/* ************************************************** */
 footer {
   padding: 0 200px;
   position: relative;
-  margin-bottom: 100px;
+  margin-top: 150px;
+}
+
+footer .footer-image {
+  height: 25%;
 }
 
 footer .socials-container {
@@ -177,3 +166,46 @@ footer .social-icon {
 footer .social-icon:hover {
   opacity: 100%;
 }
+
+footer .contact-icons:hover {
+  color: yellow;
+}
+
+footer .company-pages {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+footer .page-group {
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+footer .page-title {
+  margin-bottom: 30px;
+}
+
+footer .page-link {
+  list-style-type: none;
+  line-height: 30px;
+}
+footer .page-link a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+footer .page-link a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+/* ************************************************************************* */
+/* ************************************************************************* */
+/* ************************************************************************* */
+/* ************************************************************************* */
+/* ************************************************************************* */
+
+/* @media screen and (max-width: 500px) {
+  body {
+    background-color: rebeccapurple;
+  }
+} */
